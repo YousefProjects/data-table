@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font-awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CSS Style Sheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>My Project</title>
+  </head>
+  <body>
+    <h1>Data Table</h1>
+    <!-- <select class="filters" name="filters">
+      <option>Use Filters...</option>
+      <option value="R-P">Richest to Poorest</option>
+      <option value="P-R">Poorest to Richest</option>
+    </select> -->
+    <label
+      >Filters:
+      <select class="filters" name="filters">
+        <option value="">Select One …</option>
+        <option value="R-P">Rich to Poor</option>
+        <option value="P-R">Poor to Rich</option>
+      </select>
+    </label>
+    <table id="table">
+      <thead id="thead">
+        <tr>
+          <th>Sr</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+          <th>Salary in KD</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+      <tfoot id="tfoot"></tfoot>
+    </table>
+    <button id="add-user">hire employee</button>
+    <!-- JS link -->
+    <script src="script.js"></script>
+    <script src="filters.js"></script>
+    <script src="addUser.js"></script>
+  </body>
+</html>
